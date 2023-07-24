@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Thank You</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #ff0000;
+        }
+
+        .thank-you-message {
+            margin-top: 100px;
+        }
+
+        .thank-you-message h1 {
+            font-size: 36px;
+            color: black;
+        }
+
+        .thank-you-message p {
+            font-size: 18px;
+            color: white;
+        }
+
+        .thank-you-video {
+            margin-top: 30px;
+        }
+
+        .continue-shopping-btn {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 12px 20px;
+            font-size: 18px;
+            color: #fff;
+            background-color: black;
+            border: none;
+            border-radius: 4px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .continue-shopping-btn:hover {
+            background-color: #000;
+            color: #fff;
+            box-shadow: 0 0 5px #00ff00, 0 0 20px #00ff00;
+        }
+
+        .continue-shopping-btn::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background-color: #00ff00;
+            transform: rotate(45deg);
+            transition: transform 0.3s;
+            z-index: -1;
+        }
+
+        .continue-shopping-btn:hover::before {
+            transform: rotate(135deg);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="thank-you-message">
+        <h1>Thank You for Your Purchase!</h1>
+        <p>We appreciate your business and hope you enjoy your new clothes.</p>
+        <div class="thank-you-video">
+            <!-- Add your thank you MP4 video here -->
+            <video width="800" autoplay loop muted>
+                <source src="ThankYou\thankyou.mp4" type="video/mp4">
+                Your browser does not support HTML5 video.
+            </video>
+        </div>
+        <a class="continue-shopping-btn" href="index.html">Continue Shopping</a>
+    </div>
+</body>
+
+</html>
