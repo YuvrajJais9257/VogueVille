@@ -197,12 +197,14 @@ p {
 
 #features .feature-box .carousel-item {
   flex: 0 0 auto;
-  width: 100%;
+  width: 85%;
+  height: fit-content;
 }
 
 #features .feature-box .carousel-item img {
-  width: 75%;
-  height: 300px;
+  width: 33%;
+  height: 33%;
+  object-fit: contain;
   margin-bottom: 10px;
 }
 
